@@ -1,4 +1,4 @@
-package com.example.dh3teste
+package com.example.dh3teste.repository
 
 import com.example.dh3teste.api.ApiService
 import com.example.dh3teste.api.ResponseAPI

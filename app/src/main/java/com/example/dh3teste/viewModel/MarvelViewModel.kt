@@ -1,10 +1,11 @@
-package com.example.dh3teste
+package com.example.dh3teste.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PageKeyedDataSource
 import androidx.paging.PagedList
+import com.example.dh3teste.MarvelDataSourceFactory
 import com.example.dh3teste.Model.Result
 
 class MarvelViewModel : ViewModel() {

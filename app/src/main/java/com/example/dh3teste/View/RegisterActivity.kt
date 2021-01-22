@@ -1,9 +1,10 @@
-package com.example.dh3teste
+package com.example.dh3teste.View
 
+import android.R
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.example.dh3teste.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class RegisterActivity : AppCompatActivity() {
 
         supportActionBar?.setTitle("Register")
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+        supportActionBar?.setHomeButtonEnabled(true)
 
 
 
@@ -31,7 +32,15 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
     }
 

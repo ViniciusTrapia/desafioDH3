@@ -1,6 +1,8 @@
 package com.example.dh3teste.api
 
 import com.example.dh3teste.utils.Constants.marvelAPI.BASE_URL
+import com.example.dh3teste.utils.Constants.marvelAPI.QUERY_NAME_APIKEY
+import com.example.dh3teste.utils.Constants.marvelAPI.QUERY_VALUE_APIKEY
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -45,7 +47,7 @@ object ApiService {
                     .addQueryParameter("formatType", "comic")
                     .addQueryParameter("characters", "1009407")
                     .addQueryParameter("noVariants", "true")
-                    .addQueryParameter("apikey", "6eb7e8896ec5850c52515a8a23ee97f0")
+                    .addQueryParameter(QUERY_NAME_APIKEY, QUERY_VALUE_APIKEY)
                     .build()
                 val newRequest = chain.request().newBuilder().url(url).build()
                 chain.proceed(newRequest)

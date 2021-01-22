@@ -1,4 +1,4 @@
-package com.example.dh3teste
+package com.example.dh3teste.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -19,13 +19,13 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.btLogin.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
 
         binding.btRegister.setOnClickListener {
-            val intent = Intent(this,RegisterActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

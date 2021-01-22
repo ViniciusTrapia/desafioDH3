@@ -1,10 +1,12 @@
-package com.example.dh3teste
+package com.example.dh3teste.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.example.dh3teste.Model.Result
+import com.example.dh3teste.R
 import com.example.dh3teste.databinding.ActivityMain2Binding
+import com.example.dh3teste.toLandScape
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMain2Binding
@@ -16,7 +18,13 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.hide()
+
+     supportActionBar?.hide()
+
+
+        binding.btBackDetails.setOnClickListener {
+            finish()
+        }
 
 
 

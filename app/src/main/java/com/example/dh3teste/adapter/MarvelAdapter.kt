@@ -1,4 +1,4 @@
-package com.example.dh3teste
+package com.example.dh3teste.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

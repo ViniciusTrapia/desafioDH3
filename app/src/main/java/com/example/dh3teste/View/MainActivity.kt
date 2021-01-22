@@ -1,4 +1,4 @@
-package com.example.dh3teste
+package com.example.dh3teste.View
 
 import android.content.Intent
 import android.net.Uri
@@ -7,7 +7,8 @@ import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
-import com.bumptech.glide.Glide
+import com.example.dh3teste.adapter.MarvelAdapter
+import com.example.dh3teste.viewModel.MarvelViewModel
 import com.example.dh3teste.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

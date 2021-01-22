@@ -4,6 +4,7 @@ import androidx.paging.PageKeyedDataSource
 import com.example.dh3teste.Model.Comics
 import com.example.dh3teste.Model.Result
 import com.example.dh3teste.api.ResponseAPI
+import com.example.dh3teste.repository.MarvelRepository
 import com.example.dh3teste.utils.Constants.marvelAPI.FIRST_PAGE
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

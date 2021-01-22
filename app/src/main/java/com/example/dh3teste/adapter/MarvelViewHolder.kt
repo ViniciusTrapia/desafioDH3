@@ -1,8 +1,9 @@
-package com.example.dh3teste
+package com.example.dh3teste.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.dh3teste.Model.Result
+import com.example.dh3teste.R
 import com.example.dh3teste.databinding.RvCardItemBinding
 
 class MarvelViewHolder(
